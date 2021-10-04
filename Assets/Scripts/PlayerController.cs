@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         cameraAudio = FindObjectOfType<Camera>().GetComponent<AudioSource>();
         playerAudio = GetComponent<AudioSource>();
 
-        // Bug fix to allow audio
+        // Bug fix to allow audio (You can also manually add an AudioSource component in the Inspector haha)
         if (playerAudio == null)
             playerAudio = gameObject.AddComponent<AudioSource>();
 
